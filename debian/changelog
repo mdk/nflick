@@ -1,0 +1,41 @@
+nflick (0.4.0) unstable; urgency=low
+
+  * Pressing "escape" key while viewing a photo will return to list
+  * Worker dialogs have now proper transiency so they don't block whole device
+  * Other dialogs have now proper transiency too
+  * Fixing the bad-paging bug for good
+  * Adding hw-keys navigation to fullscreen view
+ 
+ -- Michael Dominic K. <mdk@mdk.am>  Thu, 22 Feb 2007 16:51:56 +0200
+
+nflick (0.3.0) unstable; urgency=low
+
+  * Slightly "hildonizing" the UI
+  * Show the photos that don't belong to any set
+  * An informational dialog about the cache stats
+  * A possibility to clear the cache
+  * A possibility to reset (remove) all the private data stored
+  * A possibility to disable the cache
+  * Fixed bug that caused wrong paging to be set in photolist view
+ 
+ -- Michael Dominic K. <mdk@mdk.am>  Sat, 25 Nov 2006 19:00:00 +0200
+
+nflick (0.2.0) unstable; urgency=low
+
+  * A clickable http link on the frontpage (token)
+  * Paged user interface (15 thumbs per page)
+  * Auto-rotate photos
+  * Show photos fullscreen against a black background
+  * Downloaded thumbnails are cached to the device
+  * Fixed all bugs & all memory leaks
+  * User-interface tweaks
+  * Use new, recommended gconf paths for settings
+ 
+ -- Michael Dominic K. <michaldominik@gmail.com>  Sun, 09 Jul 2006 12:00:00 +0200
+
+nflick (0.1.0) unstable; urgency=low
+
+  * Initial release.
+
+ -- Michael Dominic K. <michaldominik@gmail.com>  Thu, 11 May 2006 19:03:18 +0200
+

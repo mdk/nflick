@@ -1,0 +1,3 @@
+[D-BUS Service]
+Name=com.nokia.nflick
+Exec=@prefix@/bin/nflick

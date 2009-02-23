@@ -1,0 +1,727 @@
+2007-02-22  Michael Dominic K.  <mdk@mdk.am> 
+
+	[0.4.0 release]
+
+	* Makefile.am:
+	* NEWS:
+	* configure.ac:
+	* debian/changelog: Updating.
+
+2007-02-22  Michael Dominic K.  <mdk@mdk.am> 
+
+	* src/nflick-token-dialog.c:
+	* src/nflick-token-dialog.h: Hildonizing the auth token dialog by
+	adding a caption.
+
+2007-02-21  Michael Dominic K.  <mdk@mdk.am> 
+
+	* NEWS:
+	* src/nflick-auth-worker.c:
+	* src/nflick-model.c:
+	* src/nflick-model.h:
+	* src/nflick-show-vbox-private.h:
+	* src/nflick-show-vbox.c:
+	* src/nflick-show-vbox.h:
+	* src/nflick-thmb-table-private.h:
+	* src/nflick-thmb-table.c:
+	* src/nflick-window.c: Adding hw-keys navigation to fullscreen view. Left
+	and right arrow will advance to previous/next photo.
+
+2007-02-21  Michael Dominic K.  <mdk@mdk.am> 
+
+	* src/nflick-api-request-private.h:
+	* src/nflick-api-request.c:
+	* src/nflick-get-sizes-response-private.h:
+	* src/nflick-get-sizes-response.c:
+	* src/nflick-no-set-response-private.h:
+	* src/nflick-no-set-response.c:
+	* src/nflick-no-set-response.h:
+	* src/nflick-photo-list-response-private.h:
+	* src/nflick-photo-list-response.c:
+	* src/nflick-photo-list-response.h:
+	* src/nflick-photo-list-worker-private.h:
+	* src/nflick-photo-list-worker.c:
+	* src/nflick-photo-list-worker.h:
+	* src/nflick-photo-set-private.h:
+	* src/nflick-photo-set.c:
+	* src/nflick-photo-set.h:
+	* src/nflick-photos-vbox.c:
+	* src/nflick-photos-vbox.h:
+	* src/nflick-processor-private.h:
+	* src/nflick-processor.c:
+	* src/nflick-set-combo.c:
+	* src/nflick-set-combo.h:
+	* src/nflick-set-list-response-private.h:
+	* src/nflick-set-list-response.c:
+	* src/nflick-set-list-response.h:
+	* src/nflick-set-list-worker-private.h:
+	* src/nflick-set-list-worker.c:
+	* src/nflick-set-list-worker.h:
+	* src/nflick-thmb-table-private.h:
+	* src/nflick-thmb-table.c:
+	* src/nflick-welcome-vbox.c: Changing all the single-linked lists to
+	double-linked lists. Apparently we want to traverse the lists both ways.
+
+2006-12-18  Michael Dominic K.  <mdk@mdk.am> 
+
+	* NEWS:
+	* src/nflick-photos-vbox.c: Fixing the bad-paging bug for good.
+
+2006-12-18  Michael Dominic K.  <mdk@mdk.am> 
+
+	* src/nflick-token-dialog.c:
+	* src/nflick-token-dialog.h:
+	* src/nflick-wait-dialog.c:
+	* src/nflick-welcome-vbox.c: Adding proper transiency/parent for the
+	auth token dialog.
+	
+	* NEWS: Updating.
+
+2006-12-16  Michael Dominic K.  <mdk@mdk.am> 
+
+	* src/nflick-model.c:
+	* src/nflick-photos-vbox.c:
+	* src/nflick-wait-dialog.c:
+	* src/nflick-wait-dialog.h:
+	* src/nflick-welcome-vbox.c: Adding the proper transiecny for the
+	worker dialogs so that the window can be switched when worker is busy.
+	
+	* src/nflick-show-vbox-private.h: Fixing an old compilation error due
+	to mismatched prototype.
+
+2006-12-04  Michael Dominic K.  <mdk@mdk.am> 
+
+	* NEWS: Updating. 
+
+	* src/nflick-cache-dialog.c: Hopefully fixing the cache problem for
+	good.
+
+2006-12-02  Michael Dominic K.  <mdk@mdk.am> 
+
+	* src/nflick-show-vbox.c: Extra grab focus, return something from
+	button press signal handler.
+
+	* src/nflick-window-private.h:
+	* src/nflick-window.c:
+	* src/nflick-window.h: Pressing escape key or fullscreen key while
+	viewing a photo will return to the set view.
+
+2006-11-26  Michael Dominic K.  <mdk@mdk.am> 
+
+	[0.3.0 release]
+
+2006-11-26  Michael Dominic K.  <mdk@mdk.am> 
+
+	* NEWS: Adding information about the maemo-launcher.
+
+2006-11-26  Michael Dominic K.  <mdk@mdk.am> 
+
+	* src/nflick-cache-dialog.c:
+	* src/nflick-photos-vbox.c: Fixing some compilation warnings and one
+	typo error.
+
+2006-11-26  Michael Dominic K.  <mdk@mdk.am> 
+
+	* src/nflick-cache-dialog-private.h:
+	* src/nflick-cache-dialog.c: Changing the "ok" button in cache dialog to
+	"close" button. 
+
+2006-11-26  Michael Dominic K.  <mdk@mdk.am> 
+
+	* configure.ac: Adding a check for standard C library.
+
+2006-11-25  Michael Dominic K.  <mdk@mdk.am> 
+
+	* AUTHORS: Filling in.
+
+	* HACKING: Adding info about subversion repository.
+
+	* Makefile.am: Adding the HACKING as EXTRA_DIST.
+
+	* NEWS:
+	* README: Updating. 
+
+	* autogen.sh: Do not display a warning message when launched with no
+	params in no-configure mode. 
+
+	* configure.ac: 
+	* debian/changelog:
+	* debian/control:
+	* debian/rules: Bumping version to 0.3.0, fixing some more rules.
+
+2006-11-25  Michael Dominic K.  <mdk@mdk.am> 
+
+	* configure.ac: Making the maemo-launcher support as an enable/disable
+	configure option (disable by default). Removing some random characters
+	that caused some warnings during the configure process.
+	
+	* debian/rules: Configure with --enable-launcher.
+
+2006-11-25  Michael Dominic K.  <mdk@mdk.am> 
+
+	* src/nflick-model.c: Extra protection to force the usage of cache if
+	no cache settings are availible. Should not be really needed.
+
+2006-11-25  Michael Dominic K.  <mdk@mdk.am> 
+
+	* src/nflick-no-set-response.c: Reverse the sorting of photos that
+	don't belong to any set. Flickr seems to return them in
+	oldest-to-newest order. 
+
+	* src/nflick-flickr.h:
+	* src/nflick-set-list-worker.c: Try to get as much photos as possible,
+	so that people that have more than 100 can see all of them.
+
+2006-11-25  Michael Dominic K.  <mdk@mdk.am> 
+
+	* src/nflick-cache-dialog.c: Forcing a float conversion when
+	displaying the cache details. Should fix a bug when garbage cache
+	sizes are being displayed.
+
+2006-11-24  Michael Dominic K.  <mdk@mdk.am> 
+
+	* configure.ac:
+	* data/Makefile.am:
+	* debian/control:
+	* debian/postinst:
+	* debian/rules:
+	* src/Makefile.am: Addign the LAUNCHER flags, changing dependencies,
+	fixing the dbus installation directory, fixing debian rules (still
+	some problems though).
+
+2006-11-23  Michael Dominic K.  <mdk@mdk.am> 
+
+	* AUTHORS: Adding missing so that autotools doesn't complain.
+
+	* autogen.sh:
+	* configure.ac: Removing the refference to m4 directory and some
+	extra spaces that caused problems in sbox.
+
+2006-11-23  Michael Dominic K.  <mdk@mdk.am> 
+
+	* configure.ac:
+	* data/Makefile.am:
+	* data/com.nokia.nflick.service.in:
+	* data/nflick.desktop.in: Adding the dbus service and modyfying the
+	desktop entry to actually launch it.
+
+2006-11-23  Michael Dominic K.  <mdk@mdk.am> 
+
+	* COPYING:
+	* HACKING:
+	* INSTALL:
+	* README: Adding missing. 
+
+	* NEWS: 
+	* debian/copyright: Changing copyright notice to be more explicit.
+
+2006-11-23  Michael Dominic K.  <mdk@mdk.am> 
+
+	* autogen.sh:
+	* configure.ac: Updating to more recent auto-tools standards.
+
+2006-11-22  Michael Dominic K.  <mdk@mdk.am> 
+
+	* svn2changelog.rb: Removing.
+
+	* Makefile.am:
+	* data/Makefile.am:
+	* src/Makefile.am: Cleaning up, making more standards-compliant.
+
+2006-11-19  Michael Dominic K.  <mdk@mdk.am> 
+
+	*   NEWS: Updating, adding info about disabling/enabling cache.
+
+2006-11-19  Michael Dominic K.  <mdk@mdk.am> 
+
+	*   src/nflick-cache-dialog-private.h:
+	*   src/nflick-cache-dialog.c: Enable/disable cache when the check
+	button is being toggled.
+
+	*   src/nflick-model.c:
+	*   src/nflick-model.h: Slightly changing the way values are being
+	fetched from GConf, to be able to spot FALSE returned as a valid key
+	value and FALSE returned due to key not being found.
+
+2006-11-19  Michael Dominic K.  <mdk@mdk.am> 
+
+	*   src/nflick-pixbuf-fetch.c: Depending on the UseCache model
+	setting, use the cache to store/lookup pics.
+
+2006-11-19  Michael Dominic K.  <mdk@mdk.am> 
+
+	*   src/nflick-model-private.h:
+	*   src/nflick-model.c:
+	*   src/nflick-model.h: Adding the "UseCache" variable to model.
+
+2006-11-19  Michael Dominic K.  <mdk@mdk.am> 
+
+	*   NEWS: Updating, adding info about private data resetting.
+
+2006-11-19  Michael Dominic K.  <mdk@mdk.am> 
+
+	*   src/nflick-cache-dialog-private.h:
+	*   src/nflick-cache-dialog.c:
+	*   src/nflick-model.c:
+	*   src/nflick-model.h: Moving the clear cache function to model.
+	Adding a function to clear all the gconf keys.
+
+	*   src/nflick-window-private.h:
+	*   src/nflick-window.c:
+	*   src/nflick-window.h: Making the "reset private data" button work
+	by resetting the gconf keys, clearing cache, stopping all photo jobs 
+	and changing the screen to main menu. 
+
+2006-11-18  Michael Dominic K.  <mdk@mdk.am> 
+
+	*   NEWS: Updating.
+
+2006-11-18  Michael Dominic K.  <mdk@mdk.am> 
+
+	*   src/nflick-cache-dialog.c:
+	*   src/nflick-cache-dialog.h: Use standard hildon-caption instead of
+	the table construct.
+
+2006-11-18  Michael Dominic K.  <mdk@mdk.am> 
+
+	*   src/nflick-window.c: "Close" => "Exit" in the menu.
+
+2006-11-18  Michael Dominic K.  <mdk@mdk.am> 
+
+	*   src/nflick-photos-vbox.c: Adding the "next" and "previous" buttons
+	to a sizegroup so that they have a more nice appearance. 
+
+2006-11-18  Michael Dominic K.  <mdk@mdk.am> 
+
+	*   src/nflick.c: Remove the button (and menu) icons by parsing a
+	custom rc string. That should really be included in the stock gtkrc
+	file.
+
+2006-11-18  Michael Dominic K.  <mdk@mdk.am> 
+
+	*   src/nflick-wait-dialog.c: Moving the text above the progressbar in
+	wait dialog to make it look more hildon-like.
+
+2006-11-18  Michael Dominic K.  <mdk@mdk.am> 
+
+	*   NEWS: Updating.
+
+2006-11-18  Michael Dominic K.  <mdk@mdk.am> 
+
+	*   src/nflick-photo-set.c: Adding support for sets that have 0
+	photos (but still "exist").
+
+2006-11-18  Michael Dominic K.  <mdk@mdk.am> 
+
+	*   ChangeLog:
+	*   src/nflick-set-list-worker.c:
+	*   src/nflick-set-list-worker.h: When fetching the information about
+	photosets, fetch also (and create) the "photos not in set" photoset.
+
+2006-11-18  Michael Dominic K.  <mdk@mdk.am> 
+
+	*   src/nflick-photo-set.c: Typo fix.
+
+2006-11-18  Michael Dominic K.  <mdk@mdk.am> 
+
+	*   src/nflick-photo-set.c:
+	*   src/nflick-photo-set.h: Making photo set support fake sets that
+	don't have id (ie. set of "unsetted" photos).
+
+2006-11-18  Michael Dominic K.  <mdk@mdk.am> 
+
+	*   src/Makefile.am:
+	*   src/nflick-flickr.h:
+	*   src/nflick-no-set-response-private.h:
+	*   src/nflick-no-set-response.c:
+	*   src/nflick-no-set-response.h:
+	*   src/nflick-types.h: Adding the response parser for API command to
+	fetch photos that don't belong to any set.
+
+2006-08-25  Michael Dominic K.  <michaldominik@gmail.com> 
+
+	* src/nflick-photos-vbox.c:
+	Fixing a bug that causes wrong paging to be set in photolist view.
+
+	* NEWS:
+	Updating.
+
+2006-07-17  Michael Dominic K.  <michaldominik@gmail.com> 
+
+	* src/nflick-types.h:
+	Adding some line-breaks to macros to make them look nicer.
+
+2006-07-17  Michael Dominic K.  <michaldominik@gmail.com> 
+
+	* src/nflick-types.h:
+	* src/nflick-wait-dialog.h:
+	Moving the type boilerplate code to types (a leftover from a different
+	src layout in the past).
+
+	* src/nflick-window.c:
+	Fixing a tiny warning.
+
+2006-07-17  Michael Dominic K.  <michaldominik@gmail.com> 
+
+	* NEWS:
+	Adding some latest svn achievements.
+
+	* src/nflick-window-private.h:
+	* src/nflick-window.c:
+	Making the close menu option work.
+
+2006-07-17  Michael Dominic K.  <michaldominik@gmail.com> 
+
+	* src/Makefile.am:
+	* src/nflick-cache-dialog-private.h:
+	* src/nflick-cache-dialog.c:
+	* src/nflick-cache-dialog.h:
+	* src/nflick-types.h:
+	Adding a dialog to clean and inspect the cache.
+	
+	* src/nflick-window-private.h:
+	* src/nflick-window.c:
+	* src/nflick-window.h:
+	Adding the menu.
+
+2006-07-17  Michael Dominic K.  <michaldominik@gmail.com> 
+
+	* src/nflick-set-list-worker-private.h:
+	* src/nflick-set-list-worker.c:
+	* src/nflick-set-list-worker.h:
+	* src/Makefile.am:
+	* src/nflick-types.h:
+	* src/nflick-welcome-vbox.c:
+	* src/nflick-welcome-vbox.h:
+	Changing the name from SetWorker to SetListWorker for consistency
+	reasons. 
+
+2006-07-09  Michael Dominic K.  <michaldominik@gmail.com> 
+
+	* debian/changelog:
+	Typo fix.
+
+2006-07-09  Michael Dominic K.  <michaldominik@gmail.com> 
+
+	* data/Makefile.am:
+	* src/Makefile.am:
+	Fixing for source package. 
+
+2006-07-09  Michael Dominic K.  <michaldominik@gmail.com> 
+
+	* NEWS:
+	News file. 
+	
+	* configure.ac:
+	Adding the ossmime library.
+	
+	* debian/changelog:
+	* debian/control:
+	* debian/rules:
+	A bit of package tweaking.
+	
+	* src/Makefile.am:
+	* src/nflick-welcome-vbox-private.h:
+	* src/nflick-welcome-vbox.c:
+	* src/nflick-welcome-vbox.h:
+	Add a clickable link on the frontpage.
+
+2006-07-09  Michael Dominic K.  <michaldominik@gmail.com> 
+
+	* Makefile.am:
+	* data/nflick.desktop.in:
+	* debian/control:
+	Fixing some debian package issues.
+	
+	* src/nflick-model-private.h:
+	Fixing the gconf paths used for the maemo recommended ones.
+
+2006-07-09  Michael Dominic K.  <michaldominik@gmail.com> 
+
+	* src/nflick-model.c:
+	* src/nflick-model.h:
+	* src/nflick-pixbuf-fetch-private.h:
+	* src/nflick-pixbuf-fetch.c:
+	* src/nflick-pixbuf-fetch.h:
+	* src/nflick-processor.c:
+	* src/nflick-show-worker.c:
+	Adding the disk cache for thumbnails. 
+
+2006-07-08  Michael Dominic K.  <michaldominik@gmail.com> 
+
+	* src/nflick-model.c:
+	* src/nflick-photo-data.c:
+	* src/nflick-pixbuf-fetch.c:
+	* src/nflick-processor.c:
+	* src/nflick-processor.h:
+	* src/nflick-thmb-image.c:
+	Fixing a race-condition bug for good now (double-free). 
+	Fixing a lot of memory leaks (including a huge pixbuf leak) using
+	Valgrind.
+
+2006-07-08  Michael Dominic K.  <michaldominik@gmail.com> 
+
+	* src/nflick-get-sizes-response-private.h:
+	* src/nflick-get-sizes-response.c:
+	* src/nflick-get-sizes-response.h:
+	* src/nflick-processor.c:
+	* src/nflick-show-worker.c:
+	Do the right thing to fit/autorate images.
+	
+	* src/nflick-photos-vbox.c:
+	Correcting the nrxt/prev buttons.
+
+2006-07-08  Michael Dominic K.  <michaldominik@gmail.com> 
+
+	* src/nflick-model.c:
+	* src/nflick-model.h:
+	* src/nflick-show-vbox.c:
+	Open the full-sized photos in full screen.
+	Use black background for photos.
+
+2006-07-08  Michael Dominic K.  <michaldominik@gmail.com> 
+
+	* src/nflick-behaviour.h.in:
+	Fixing a broken commit. 
+	Changes were introduced into the generated file, instead of the
+	source. 
+
+	* src/nflick-photos-vbox.c:
+	* src/nflick-welcome-vbox.c:
+	Be more nice about some strings (when the user hasn't filled his
+	personal nick/screen name).
+
+2006-07-08  Michael Dominic K.  <michaldominik@gmail.com> 
+
+	* src/nflick-photos-vbox-private.h:
+	* src/nflick-photos-vbox.c:
+	* src/nflick-photos-vbox.h:
+	Making the thmb interface paging.
+
+	* src/nflick-processor.c:
+	Fixing (supposingly) a double free bug.
+
+	* src/nflick-thmb-image.c:
+	* src/nflick-thmb-table.c:
+	* src/nflick-thmb-table.h:
+	Support for paging.
+
+	* src/nflick-welcome-vbox.c:
+	Style fix.
+
+2006-06-26  Michael Dominic K.  <michaldominik@gmail.com> 
+
+	* debian/changelog:
+	* debian/rules:
+	Fixing some debian rules and things. 
+
+2006-06-25  Michael Dominic K.  <michaldominik@gmail.com> 
+
+	* src/nflick-model.h:
+	Was missing.
+
+	* src/nflick-thmb-table.c:
+	Fixing a typo.
+
+2006-06-25  Michael Dominic K.  <michaldominik@gmail.com> 
+
+	* src/nflick-model.c:
+	Actually use the pixbuf stuff from behaviour file.
+
+	* src/nflick-thmb-table.c:
+	Adding row spacing.
+
+2006-06-25  Michael Dominic K.  <michaldominik@gmail.com> 
+
+	* ./: 
+	Moving to automake.
+	Adding some debian packaging.
+
+2006-06-25  Michael Dominic K.  <michaldominik@gmail.com> 
+
+	* compile.sh:
+	* nflick-flickr.h:
+	* nflick-get-sizes-response-private.h:
+	* nflick-get-sizes-response.c:
+	* nflick-get-sizes-response.h:
+	* nflick-model.c:
+	* nflick-model.h:
+	* nflick-photos-vbox.c:
+	* nflick-photos-vbox.h:
+	* nflick-processor-private.h:
+	* nflick-processor.c:
+	* nflick-processor.h:
+	* nflick-show-vbox-private.h:
+	* nflick-show-vbox.c:
+	* nflick-show-vbox.h:
+	* nflick-show-worker-private.h:
+	* nflick-show-worker.c:
+	* nflick-show-worker.h:
+	* nflick-thmb-image-private.h:
+	* nflick-thmb-image.c:
+	* nflick-thmb-image.h:
+	* nflick-thmb-table-private.h:
+	* nflick-thmb-table.c:
+	* nflick-thmb-table.h:
+	* nflick-types.h:
+	* nflick-window-private.h:
+	* nflick-window.c:
+	* nflick-window.h:
+	* stub.png:
+	GUADEC hacking, basic functionality working.
+
+2006-06-22  Michael Dominic K.  <michaldominik@gmail.com>
+
+	* ./:
+	Too many changes, not enough time to write changelog entries.
+
+
+2006-06-21  Michael Dominic K.  <michaldominik@gmail.com> 
+
+	* nflick-photo-set-private.h:
+	* nflick-photo-set.c:
+	Adding "count" property.
+	
+	* nflick-photos-vbox-private.h:
+	* nflick-photos-vbox.c:
+	* nflick-photos-vbox.h:
+	Change the tables on combo change.
+
+	* nflick-set-combo.c:
+	* nflick-set-combo.h:
+	Correctly return the current photoset selected.
+
+	* nflick-types.h:
+	* nflick-thmb-table-private.h:
+	* nflick-thmb-table.c:
+	* nflick-thmb-table.h:
+	A table to store the thumbnails. 
+
+	* nflick-api-request.c:
+	Fixing the method name "get" => "GET". 
+	
+	* compile.sh:
+	* nflick-pixbuf-fetch-private.h:
+	* nflick-pixbuf-fetch.c:
+	* nflick-pixbuf-fetch.h:
+	A helper to fetch pixbufs from http addr.
+
+	* nflick.c:
+	Code style.
+
+2006-06-20  Michael Dominic K.  <michaldominik@gmail.com> 
+
+	* nflick-welcome-vbox.c:
+	Info the user that the token has been sucesfully authorized.
+
+2006-06-20  Michael Dominic K.  <michaldominik@gmail.com> 
+
+	* compile.sh:
+	* nflick-types.h:
+	* nflick-token-dialog-private.h:
+	* nflick-token-dialog.c:
+	* nflick-token-dialog.h:
+	Adding a dialog to enter the mini-token.
+
+	* nflick-welcome-vbox-private.h:
+	* nflick-welcome-vbox.c:
+	* nflick-welcome-vbox.h:
+	Present the mini-token dialog when the authotization option is
+	selected. 
+
+2006-06-20  Michael Dominic K.  <michaldominik@gmail.com> 
+
+	* nflick-photos-vbox-private.h:
+	* nflick-photos-vbox.c:
+	* nflick-photos-vbox.h:
+	Take photosets list as a constructor param.
+	Remove the whole bottom button box pane.
+	Use model name for the global markup.
+	
+	* nflick-set-combo.c:
+	* nflick-set-combo.h:
+	By default activate to first item.
+	A helper func to set the list, don't do that in the constructor.
+
+	* nflick-set-list-response.c:
+	* nflick-set-list-response.h:
+	A helper func to take the list.
+
+	* nflick-set-worker-private.h:
+	* nflick-set-worker.c:
+	* nflick-set-worker.h:
+	A helper func to take the list.
+
+	* nflick-welcome-vbox.c:
+	Start the photos VBox with the photosets list.
+
+2006-06-20  Michael Dominic K.  <michaldominik@gmail.com> 
+
+	* compile.sh:
+	* nflick-set-combo-private.h:
+	* nflick-set-combo.c:
+	* nflick-set-combo.h:
+	* nflick-types.h:
+	Adding an overriden GtkComboBox. This will be used to change the sets
+	in the photo view. 
+
+2006-06-20  Michael Dominic K.  <michaldominik@gmail.com> 
+
+	* compile.sh:
+	Adding a size optimization.
+
+	* nflick-photo-set-private.h:
+	* nflick-photo-set.c:
+	Adding the proparty with a combo-friendly name.
+
+	* nflick-welcome-vbox.c:
+	* nflick-window.c:
+	Fixing some extra dispose stuff.
+	Adding temporary bollox.
+
+2006-06-20  Michael Dominic K.  <michaldominik@gmail.com> 
+
+	* nflick-model.c:
+	Adding some missing destroy methods.
+	Ignore double destroys.
+
+	* nflick-welcome-vbox-private.h:
+	* nflick-welcome-vbox.c:
+	Fix the disposing bug related to wrong radio button assignments.
+	Remove the mini token entry. 
+
+	* nflick-window-private.h:
+	* nflick-window.c:
+	Do the right thing on window closure.
+
+	* nflick.c:
+	Remove some stubby shit.
+
+2006-06-20  Michael Dominic K.  <michaldominik@gmail.com> 
+	
+	* nflick:
+	Removing binary.
+
+	* nflick-types.h:
+	* compile.sh:
+	* nflick-photo-set-private.h:
+	* nflick-photo-set.c:
+	* nflick-photo-set.h:
+	Adding the object to store photoset info.
+
+	* nflick-set-list-response-private.h:
+	* nflick-set-list-response.c:
+	* nflick-set-list-response.h:
+	Response actually creates the photo sets list.
+
+	* nflick-welcome-vbox.c:
+	Create set worker.
+
+	* svn2changelog.rb:
+	A handy script to automagically generate ChangeLog entries from svn.
+
+2006-06-20  Michael Dominic K.  <michaldominik@gmail.com>
+
+	* ./:
+	Initial import.
+

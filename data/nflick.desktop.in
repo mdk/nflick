@@ -1,0 +1,13 @@
+[Desktop Entry]
+Encoding=UTF-8
+Version=1.0
+Type=Application
+Name=Flickr browser
+Comment=Browse flickr photos
+Exec=@prefix@/bin/nflick
+Icon=nflick
+X-Window-Icon=tn-bookmarks-link
+X-HildonDesk-ShowInToolbar=true
+X-Osso-Type=application/x-executable
+X-Osso-Service=nflick
+Terminal=false

@@ -1,0 +1,7 @@
+NFlick is a simple application to quickly browse your flickr photo sets. 
+It uses the public flickr API and can cache the thumbnails for faster 
+access in future.
+
+More info: https://garage.maemo.org/projects/nflick/
+
+

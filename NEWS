@@ -1,0 +1,38 @@
+NFlick 0.4 (22 Feb 2007)
+========================
+
+ * Pressing "escape" key while viewing a photo will return to list
+ * Worker dialogs have now proper transiency so they don't block whole device
+ * Other dialogs have now proper transiency too
+ * Fixing the bad-paging bug for good
+ * Adding hw-keys navigation to fullscreen view
+
+NFlick 0.3 (25 Nov 2006)
+========================
+
+ * Slightly "hildonizing" the UI
+ * Show the photos that don't belong to any set
+ * An informational dialog about the cache stats
+ * A possibility to clear the cache
+ * A possibility to reset (remove) all the private data stored
+ * A possibility to disable the cache
+ * Fixed bug that caused wrong paging to be set in photolist view
+ * Use maemo-launcher for faster startup
+
+NFlick 0.2 (09 Jul 2006)
+========================
+
+ * A clickable http link on the frontpage (token)
+ * Paged user interface (15 thumbs per page)
+ * Auto-rotate photos
+ * Show photos fullscreen against a black background
+ * Downloaded thumbnails are cached to the device
+ * Fixed all bugs & all memory leaks
+ * User-interface tweaks
+ * Use new, recommended gconf paths for settings
+
+NFlick 0.1 (25 Jun 2006)
+========================
+
+ * Initial release
+

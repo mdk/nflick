@@ -1,0 +1,25 @@
+Quick NFlick hacking guide
+==========================
+
+* Indent is 8 spaces, no tabs
+* Please do not put changelog entries into commit messages. Use simplified, human-readable log messages.
+* Add yourself to the "Authors" section of the license header of the file you're editing
+* Use kernel-style C formatting. Ie.
+
+        if (p == 10) {
+                a = 10;
+                b = 20;
+        }
+
+* Separate function name, arguments, etc. with space. Ie:
+
+        void something (int a, int b);
+
+NOT:
+
+        void something(int a,int b);
+
+* Try to follow the existing code formatting/style/layout. 
+* SVN repository lives in http://svn.mdk.am/nflick
+
+

@@ -1,0 +1,9 @@
+#! /bin/sh
+
+gtk-update-icon-cache -f /usr/share/icons/hicolor
+
+( cd /usr/share/applications/hildon/ && mv nflick.inactive nflick.desktop )
+
+#DEBHELPER#
+
+exit 0
